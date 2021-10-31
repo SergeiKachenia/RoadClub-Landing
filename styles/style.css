@@ -107,7 +107,7 @@
   width: 100%;
   min-height: calc(100vw*836/1440);
   margin-top: 20px;
-  background-image: url("../../../../../images/article__main-image.png");
+  background-image: url("../images/article__main-image.png");
   background-position: center center;
   background-repeat: no-repeat;
   -o-object-fit: contain;
@@ -163,7 +163,7 @@
 }
 
 .ride__img {
-  background-image: url("../../../../../images/ride__img.png");
+  background-image: url("../images/ride__img.png");
   background-position: center center;
   background-repeat: no-repeat;
   -o-object-fit: contain;
@@ -301,7 +301,7 @@
   width: 50px;
   height: 50px;
   margin-right: 20px;
-  background-image: url("../../../../../images/surface-types__arrow-left.svg");
+  background-image: url("../images/surface-types__arrow-left.svg");
   background-position: center center;
   background-repeat: no-repeat;
   -o-object-fit: contain;
@@ -316,7 +316,7 @@
   padding: 1%;
   width: 50px;
   height: 50px;
-  background-image: url("../../../../../images/surface-types__arrow-right.svg");
+  background-image: url("../images/surface-types__arrow-right.svg");
   background-position: center center;
   background-repeat: no-repeat;
   -o-object-fit: contain;
@@ -467,7 +467,7 @@
 }
 
 .training__img {
-  background-image: url("../../../../../images/training__img.png");
+  background-image: url("../images/training__img.png");
   background-position: center center;
   background-repeat: no-repeat;
   -o-object-fit: contain;

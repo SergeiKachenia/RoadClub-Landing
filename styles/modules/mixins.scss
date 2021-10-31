@@ -17,7 +17,7 @@
 }
 
 @mixin backgroundImage($url, $position, $repeat, $fit) {
-    background-image: url('#{$url}.png');
+    background-image: url('#{$url}');
     background-position: $position;
     background-repeat: $repeat;
     object-fit: $fit;
@@ -46,14 +46,4 @@ $gap) {
     grid-template-columns: $templateColumns;
     grid-template-rows: $templateRows;
     gap: $gap;
-}
-
-@mixin backgroundImageSvg($url,
-$position,
-$repeat,
-$fit) {
-    background-image: url('#{$url}.svg');
-    background-position: $position;
-    background-repeat: $repeat;
-    object-fit: $fit;
 }

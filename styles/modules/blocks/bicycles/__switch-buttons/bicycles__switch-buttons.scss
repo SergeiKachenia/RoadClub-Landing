@@ -1,0 +1,5 @@
+.bicycles__switch-buttons {
+    grid-row: 1;
+    grid-column: 2;
+    @include flex(row, flex-end, flex-end);
+}

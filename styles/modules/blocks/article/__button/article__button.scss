@@ -1,0 +1,6 @@
+.article__button {
+    grid-column: 1;
+    grid-row: 3;
+    @include button(#24B47E, none, 4px, 0 0 $marginLarge $marginLargeProc, 2% 3%, 180px, 50px);
+    @include font(14px, $secondaryTextColor, 600, 129%, center, 1, 1px);
+}

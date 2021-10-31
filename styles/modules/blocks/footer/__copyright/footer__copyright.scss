@@ -1,0 +1,5 @@
+.footer__copyright {
+    @include font(14px, #CFCFCF, 600, 140%, left, 1, 0px);
+    padding: 0 0 $marginMedium;
+    margin: 0;
+}

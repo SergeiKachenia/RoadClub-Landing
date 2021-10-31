@@ -1,0 +1,7 @@
+.ride__blockquote-author {
+    @include font(20px, $primaryTextColor, 500, 160%, left, 1, 0px);
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    max-width: 470px;
+}

@@ -1,0 +1,20 @@
+.bicycles__gallery-item {
+    max-width: 340px;
+    background-color: $primaryBackColor;
+    padding: $marginSmall;
+    border-radius: 20px;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    margin-bottom: $marginSmall;
+}
+
+.bicycles__gallery-item:nth-of-type(1n) {
+    grid-column: 1;
+}
+
+.bicycles__gallery-item:nth-of-type(2n) {
+    grid-column: 2;
+}
+
+.bicycles__gallery-item:nth-of-type(3n) {
+    grid-column: 3;
+}

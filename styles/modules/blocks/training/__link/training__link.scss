@@ -1,0 +1,5 @@
+.training__link {
+    @include font(18px, $primaryTextColor, 600, 156%, left, 1, 0px);
+    text-decoration: none;
+    margin-right: $marginSmall + 10px;
+}

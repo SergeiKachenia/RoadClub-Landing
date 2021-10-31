@@ -1,0 +1,6 @@
+.article {
+    width: $maxWidth;
+    max-width: $desktop;
+    @include grid(40% 1fr, 200px 120px 160px 1fr, 50px 17.3%);
+    margin-bottom: $marginLarge;
+}

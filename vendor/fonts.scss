@@ -1,0 +1,21 @@
+@mixin fonts($path, $ffamily, $weight) {
+    @font-face {
+        src: url('#{$path}.woff') format('woff'),
+        url('#{$path}.woff2') format('woff2');
+        font-family: '#{$ffamily}';
+        font-weight: $weight;
+    }
+}
+
+@include fonts('../vendor/fonts/inter-v3-latin-regular',
+'Inter',
+400);
+@include fonts('../vendor/fonts/inter-v3-latin-500',
+'Inter',
+500);
+@include fonts('../vendor/fonts/inter-v3-latin-600',
+'Inter',
+600);
+@include fonts('../vendor/fonts/inter-v3-latin-700',
+'Inter',
+700);

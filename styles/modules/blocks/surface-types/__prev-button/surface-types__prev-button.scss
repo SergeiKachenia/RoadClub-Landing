@@ -1,0 +1,5 @@
+.surface-types__prev-button {
+    @include button(#EBEBEB, none, 50px, 0, 1%, 50px, 50px);
+    margin-right: $marginSmall;
+    @include backgroundImageSvg('../../../../../images/surface-types__arrow-left', center center, no-repeat, contain);
+}

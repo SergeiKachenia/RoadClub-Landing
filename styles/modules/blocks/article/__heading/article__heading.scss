@@ -1,0 +1,7 @@
+.article__heading {
+    @include font(55px, $primaryTextColor, 700, 109%, left, 1, -0.5px);
+    margin: $marginMedium + 20px 0 0 $marginLargeProc;
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 460px;
+}

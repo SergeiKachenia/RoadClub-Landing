@@ -1,0 +1,7 @@
+.bicycles__heading {
+    grid-column: 1;
+    grid-row: 1;
+    @include font(55px, $primaryTextColor, bold, 109%, left, 1, -0.5px);
+    margin: 0;
+    max-width: $descWidth;
+}

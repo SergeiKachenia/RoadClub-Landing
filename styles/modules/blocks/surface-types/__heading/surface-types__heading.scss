@@ -1,0 +1,7 @@
+.surface-types__heading {
+    @include font(55px, $primaryTextColor, bold, 109%, left, 1, -0.5px);
+    margin: 0 0 0 $marginLargeProc;
+    grid-column: 1;
+    grid-row: 1;
+    max-width: $descWidth;
+}

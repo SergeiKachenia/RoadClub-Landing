@@ -1,0 +1,7 @@
+.training__description {
+    @include font(18px, #222, normal, 156%, left, 0.7, 1px);
+    max-width: $descWidth;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 0 $marginLarge + 10px;
+}

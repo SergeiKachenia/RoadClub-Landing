@@ -1,0 +1,7 @@
+.surface-types__img-container {
+    margin: 0 0 0 $marginLargeProc;
+    grid-column: 1;
+    grid-row: 3;
+    @include flex(row, space-between, stretch);
+    overflow: hidden;
+}

@@ -1,0 +1,10 @@
+.bicycles__switch-button {
+    @include button(transparent, none, 0px, 0, 0, 60px, 28px);
+    @include font(18px, $primaryTextColor, 600, 156%, center, 1, 0px);
+    margin-right: $marginMedium - 20px;
+}
+
+.bicycles__switch-button:last-of-type {
+    margin-right: 0;
+    width: 24px;
+}

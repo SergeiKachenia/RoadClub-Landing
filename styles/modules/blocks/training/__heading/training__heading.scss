@@ -1,0 +1,7 @@
+.training__heading {
+    @include font(55px, $primaryTextColor, bold, 109%, left, 1, -0.5px);
+    max-width: $descWidth;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+}

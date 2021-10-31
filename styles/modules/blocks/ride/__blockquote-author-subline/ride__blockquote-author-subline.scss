@@ -1,0 +1,7 @@
+.ride__blockquote-author-subline {
+    @include font(16px, #222, normal, 175%, left, 0.7, 0px);
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    max-width: 470px;
+}

@@ -1,0 +1,7 @@
+.ride__blockquote {
+    @include font(34px, $primaryTextColor, 600, 129%, left, 1, -0.5px);
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    max-width: $descWidth + 10px;
+}

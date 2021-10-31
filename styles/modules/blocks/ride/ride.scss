@@ -1,0 +1,6 @@
+.ride {
+    max-width: $desktop;
+    width: $maxWidth;
+    @include grid(57.3% 1fr, 1fr 10% 5%, 0 0);
+    margin-bottom: $marginLarge;
+}

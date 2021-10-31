@@ -1,0 +1,8 @@
+.article__description {
+    margin: 0 0 0 $marginLargeProc;
+    padding: 0;
+    @include font(18px, #222, normal, 156%, left, 0.7, 1px);
+    grid-column: 1;
+    grid-row: 2;
+    max-width: $descWidth;
+}

@@ -1,0 +1,59 @@
+@mixin font ($size, $color, $fontWeight, $lineHeight, $textAlign, $opacity, $spacing) {
+    font-size: $size;
+    color: $color;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    text-align: $textAlign;
+    opacity: $opacity;
+    letter-spacing: $spacing;
+    font-family: Inter, Arial, sans-serif;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin backgroundImage($url, $position, $repeat, $fit) {
+    background-image: url('#{$url}.png');
+    background-position: $position;
+    background-repeat: $repeat;
+    object-fit: $fit;
+}
+
+@mixin button($backgroundcolor,
+$border,
+$borderRad,
+$margin,
+$padding,
+$max-width,
+$height) {
+    background-color: $backgroundcolor;
+    border: $border;
+    border-radius: $borderRad;
+    margin: $margin;
+    padding: $padding;
+    width: $max-width;
+    height: $height;
+}
+
+@mixin grid($templateColumns,
+$templateRows,
+$gap) {
+    display: grid;
+    grid-template-columns: $templateColumns;
+    grid-template-rows: $templateRows;
+    gap: $gap;
+}
+
+@mixin backgroundImageSvg($url,
+$position,
+$repeat,
+$fit) {
+    background-image: url('#{$url}.svg');
+    background-position: $position;
+    background-repeat: $repeat;
+    object-fit: $fit;
+}

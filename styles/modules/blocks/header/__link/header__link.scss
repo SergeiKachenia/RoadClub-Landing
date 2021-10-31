@@ -1,0 +1,14 @@
+.header__link {
+    text-decoration: none;
+    @include font(14px, $primaryTextColor, 500, 18px, right, 1, 1px);
+    margin-right: 2.6%;
+    display: block;
+}
+
+.header__link:last-of-type {
+    margin-right: 0;
+}
+
+.header__link:hover {
+    opacity: 0.75;
+}

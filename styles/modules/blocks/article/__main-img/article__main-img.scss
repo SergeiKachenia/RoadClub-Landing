@@ -1,0 +1,11 @@
+.article__main-img {
+    max-width: 610px;
+    width: $maxWidth;
+    min-height: calc(100vw*836/1440);
+    margin-top: $marginSmall;
+    @include backgroundImage('../../../../../images/article__main-image', center center, no-repeat, contain);
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    align-self: flex-start;
+}

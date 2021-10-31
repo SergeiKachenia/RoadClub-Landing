@@ -1,0 +1,10 @@
+.surface-types__img {
+    width: $maxWidth;
+    max-width: 650px;
+    min-height: calc(100vw*400/1440);
+    margin-right: $marginMedium - 20px;
+}
+
+.surface-types__img:last-of-type {
+    margin-right: 0;
+}

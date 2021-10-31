@@ -1,0 +1,5 @@
+.footer__subscribe {
+    @include font(24px, $primaryTextColor, 600, 133%, left, 1, 0px);
+    margin: 0 0 $marginMedium - 10px;
+    max-width: $descWidth / 2;
+}

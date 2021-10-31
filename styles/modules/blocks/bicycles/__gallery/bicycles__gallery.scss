@@ -1,0 +1,5 @@
+.bicycles__gallery {
+    @include grid(1fr 1fr 1fr, 1fr, 0 40px);
+    grid-column: 1/2;
+    grid-row: 2;
+}

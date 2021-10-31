@@ -1,0 +1,9 @@
+.ride__img {
+    @include backgroundImage('../../../../../images/ride__img', center center, no-repeat, contain);
+    width: $maxWidth;
+    max-width: 650px;
+    min-height: calc(100vw*460/1440);
+    margin-left: $marginLargeProc;
+    grid-column: 1;
+    grid-row: 1/-1;
+}

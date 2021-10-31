@@ -1,0 +1,6 @@
+.training {
+    max-width: $desktop;
+    width: 83.3%;
+    margin: 0 auto $marginLarge;
+    @include grid(1fr 1fr, 60px 270px 30px, 50px 0px);
+}

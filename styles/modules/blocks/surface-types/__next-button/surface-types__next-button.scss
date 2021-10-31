@@ -1,4 +1,4 @@
 .surface-types__next-button {
     @include button(#EBEBEB, none, 50px, 0, 1%, 50px, 50px);
-    @include backgroundImageSvg('../../../../../images/surface-types__arrow-right', center center, no-repeat, contain);
+    @include backgroundImage('../images/surface-types__arrow-right.svg', center center, no-repeat, contain);
 }

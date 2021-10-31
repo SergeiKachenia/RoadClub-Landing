@@ -1,5 +1,5 @@
 .ride__img {
-    @include backgroundImage('../../../../../images/ride__img', center center, no-repeat, contain);
+    @include backgroundImage('../images/ride__img.png', center center, no-repeat, contain);
     width: $maxWidth;
     max-width: 650px;
     min-height: calc(100vw*460/1440);

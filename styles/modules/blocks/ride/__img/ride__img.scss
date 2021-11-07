@@ -1,9 +1,32 @@
 .ride__img {
-    @include backgroundImage('../images/ride__img.png', center center, no-repeat, contain);
-    width: $maxWidth;
+    width: 650px;
     max-width: 650px;
-    min-height: calc(100vw*460/1440);
-    margin-left: $marginLargeProc;
     grid-column: 1;
     grid-row: 1/-1;
+}
+
+@media screen and (max-width:$desktopSmall) {
+    .ride__img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .ride__img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .ride__img {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .ride__img {
+        width: 284px;
+        grid-column: 1;
+        grid-row: 1/1;
+    }
 }

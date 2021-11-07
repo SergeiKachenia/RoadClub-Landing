@@ -1,7 +1,30 @@
 .training__heading {
-    @include font(55px, $primaryTextColor, bold, 109%, left, 1, -0.5px);
+    @include font(55px, bold, 109%, left, 1, -0.5px);
+    color: $primaryTextColor;
     max-width: $descWidth;
     grid-column: 1;
     grid-row: 1;
     margin: 0;
+}
+
+.training__heading._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .training__heading {
+        @include font(48px, bold, 109%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .training__heading {
+        @include font(42px, bold, 109%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .training__heading {
+        @include font(32px, bold, 125%, left, 1, -0.5px);
+    }
 }

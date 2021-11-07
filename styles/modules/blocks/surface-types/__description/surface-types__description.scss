@@ -1,7 +1,35 @@
 .surface-types__description {
-    @include font(18px, #222, normal, 156%, left, 0.7, 1px);
+    @include font(18px, normal, 156%, left, 0.7, 1px);
+    color: #222;
     max-width: $descWidth;
-    margin: 0 0 30px $marginLargeProc;
+    margin: 0 0 $marginSmall + 10px;
     grid-column: 1;
     grid-row: 2;
+}
+
+.surface-types__description._theme_dark {
+    color: #E5E5E5;
+}
+
+@media screen and (max-width:$laptop) {
+    .surface-types__description {
+        @include font(16px, normal, 156%, left, 0.7, 1px);
+        margin: 0 0 $marginSmall + 5px;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .surface-types__description {
+        @include font(14px, normal, 156%, left, 0.7, 1px);
+        margin: 0 0 $marginSmall;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__description {
+        @include font(12px, normal, 150%, left, 0.7, 1px);
+        grid-column: 1;
+        grid-row: 3;
+        margin: 0 0 $marginSmall;
+    }
 }

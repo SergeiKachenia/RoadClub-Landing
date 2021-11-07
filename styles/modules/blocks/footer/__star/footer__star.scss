@@ -1,0 +1,11 @@
+.footer__star {
+    display: none;
+}
+
+@media screen and (max-width:$mobileL) {
+    .footer__star {
+        width: 38px;
+        height: 38px;
+        display: block;
+    }
+}

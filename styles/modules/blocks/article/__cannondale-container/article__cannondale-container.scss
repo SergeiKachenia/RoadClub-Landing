@@ -1,0 +1,23 @@
+.article__cannondale-container {
+    @include flex(row, flex-start, center);
+    margin: $marginLarge 0 0 0;
+    height: 20px;
+}
+
+@media screen and (max-width:$desktopSmall) {
+    .article__cannondale-container {
+        margin: $marginLarge - 30px 0 0 0;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .article__cannondale-container {
+        margin: $marginMedium + 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article__cannondale-container {
+        display: none;
+    }
+}

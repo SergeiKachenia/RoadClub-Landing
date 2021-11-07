@@ -1,0 +1,14 @@
+.bicycles__pagination {
+    display: none;
+}
+
+@media screen and (max-width:$mobileL) {
+    .bicycles__pagination {
+        @include grid(repeat(3, min-content), 1fr, 0 10px);
+        margin: -$marginLarge auto 0;
+        width: 50%;
+        grid-row: 4;
+        justify-content: center;
+        z-index: 99;
+    }
+}

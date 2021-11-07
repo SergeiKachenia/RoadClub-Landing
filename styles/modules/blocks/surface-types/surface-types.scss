@@ -1,5 +1,24 @@
 .surface-types {
     max-width: $desktop;
     width: $maxWidth;
-    margin-bottom: $marginLarge;
+    margin: 0 auto $marginLarge;
+    padding: 0 0 0 $marginLargeProc;
+    box-sizing: border-box;
+    display: grid;
+}
+
+@media screen and (max-width:$tablet) {
+    .surface-types {
+        margin: 0 auto $marginLarge - 20px;
+        padding: 0 0 0 $marginLargeProc - 3%;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types {
+        max-width: 284px;
+        margin: 0 auto $marginLarge;
+        border-top: 1px solid #E3E3E3;
+        padding: $marginSmall 0 0 0;
+    }
 }

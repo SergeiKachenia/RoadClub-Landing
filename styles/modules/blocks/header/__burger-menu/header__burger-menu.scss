@@ -1,0 +1,27 @@
+.header__burger-menu {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width:$mobileL) {
+    .header__burger-menu {
+        @include backgroundImage('../images/burger-open.svg', center, no-repeat, contain);
+        position: absolute;
+        height: 22px;
+        width: 22px;
+        top: 22px;
+        right: 18px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.header__burger-menu._theme_dark {
+    filter: invert(100%);
+}
+
+@media screen and (max-width:$mobileL) {
+    .header__burger-menu._active {
+        @include backgroundImage('../images/burger-close.svg', center, no-repeat, contain);
+    }
+}

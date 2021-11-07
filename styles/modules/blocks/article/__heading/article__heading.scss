@@ -1,7 +1,36 @@
 .article__heading {
-    @include font(55px, $primaryTextColor, 700, 109%, left, 1, -0.5px);
-    margin: $marginMedium + 20px 0 0 $marginLargeProc;
+    @include font(55px, 700, 109%, left, 1, -0.5px);
+    color: $primaryTextColor;
+    margin: $marginMedium + 20px 0 0;
     grid-column: 1;
     grid-row: 1;
     max-width: 460px;
+}
+
+.article__heading._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .article__heading {
+        @include font(50px, 700, 109%, left, 1, -0.5px);
+        margin: $marginMedium 0 0;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .article__heading {
+        @include font(42px, 700, 109%, left, 1, -0.5px);
+        margin: $marginMedium - 10px 0 0;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article__heading {
+        @include font(32px, 700, 125%, left, 1, -0.5px);
+        margin: $marginMedium - 20px 0 0;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+    }
 }

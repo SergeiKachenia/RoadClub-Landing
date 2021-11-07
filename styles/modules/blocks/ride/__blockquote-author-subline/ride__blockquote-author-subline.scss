@@ -1,7 +1,27 @@
 .ride__blockquote-author-subline {
-    @include font(16px, #222, normal, 175%, left, 0.7, 0px);
+    @include font(16px, normal, 175%, left, 0.7, 0px);
+    color: #222;
     grid-column: 2;
     grid-row: 3;
     margin: 0;
     max-width: 470px;
+}
+
+.ride__blockquote-author-subline._theme_dark {
+    color: #E5E5E5;
+}
+
+@media screen and (max-width:$tablet) {
+    .ride__blockquote-author-subline {
+        @include font(14px, normal, 175%, left, 0.7, 0px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .ride__blockquote-author-subline {
+        @include font(10px, 500, 160%, left, 0.7, 0px);
+        grid-column: 1;
+        grid-row: 3/3;
+        padding: 20px 0 0 0;
+    }
 }

@@ -1,5 +1,14 @@
 .surface-types__buttons {
     grid-column: 1;
     grid-row: 4;
-    margin: 0 0 0 $marginLargeProc;
+    margin: 0;
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__buttons {
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 70%;
+        margin-top: 10px;
+    }
 }

@@ -1,6 +1,32 @@
 .article__cannondale {
     grid-column-start: 1;
     grid-row-start: 4;
-    @include font(18px, $primaryTextColor, normal, 100%, left, 1, 0px);
-    margin: 0 0 0 $marginLargeProc;
+    @include font(18px, normal, 100%, left, 1, 0px);
+    color: $primaryTextColor;
+    margin: 0 $marginSmall + 10px 0 0;
+    max-width: $descWidth;
+}
+
+.article__cannondale._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .article__cannondale {
+        @include font(16px, normal, 100%, left, 1, 0px);
+        margin: 0 $marginSmall + 5px 0 0;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .article__cannondale {
+        @include font(13px, normal, 100%, left, 1, 0px);
+        margin: 0 $marginSmall - 10px 0 0;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article__cannondale {
+        visibility: hidden;
+    }
 }

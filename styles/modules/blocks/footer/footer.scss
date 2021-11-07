@@ -1,6 +1,25 @@
 .footer {
     max-width: $desktop;
-    width: 83.3%;
     margin: 0 auto;
     position: relative;
+    padding: 0 0 0 $marginLargeProc;
+    box-sizing: border-box;
+    background-color: #EFEFEF;
+    width: $maxWidth;
+}
+
+.footer._theme_dark {
+    background-color: #2F2F2F;
+}
+
+@media screen and (max-width:$tablet) {
+    .footer {
+        padding: 0 0 0 $marginLargeProc - 3%;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .footer {
+        padding: 0;
+    }
 }

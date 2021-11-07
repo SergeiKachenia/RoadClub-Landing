@@ -1,0 +1,32 @@
+.article__sticky-area {
+    position: absolute;
+    top: 40%;
+    height: 500px;
+    left: -30%;
+}
+
+@media screen and (max-width:$desktopSmall) {
+    .article__sticky-area {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .article__sticky-area {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .article__sticky-area {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article__sticky-area {
+        left: -15%;
+        top: 30%;
+        height: 250px;
+    }
+}

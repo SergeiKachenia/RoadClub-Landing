@@ -1,6 +1,7 @@
 .header__link {
     text-decoration: none;
-    @include font(14px, $primaryTextColor, 500, 18px, right, 1, 1px);
+    @include font(14px, 500, 18px, right, 1, 1px);
+    color: $primaryTextColor;
     margin-right: 2.6%;
     display: block;
 }
@@ -11,4 +12,21 @@
 
 .header__link:hover {
     opacity: 0.75;
+}
+
+.header__link._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$tablet) {
+    .header__link {
+        @include font(13px, 500, 18px, right, 1, 1px);
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .header__link {
+        margin: 0 0 30px 0;
+    }
 }

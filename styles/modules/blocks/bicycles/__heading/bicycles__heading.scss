@@ -1,7 +1,30 @@
 .bicycles__heading {
     grid-column: 1;
     grid-row: 1;
-    @include font(55px, $primaryTextColor, bold, 109%, left, 1, -0.5px);
+    @include font(55px, bold, 109%, left, 1, -0.5px);
+    color: $primaryTextColor;
     margin: 0;
     max-width: $descWidth;
+}
+
+.bicycles__heading._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .bicycles__heading {
+        @include font(48px, bold, 109%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .bicycles__heading {
+        @include font(42px, bold, 109%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .bicycles__heading {
+        @include font(32px, bold, 125%, left, 1, -0.5px);
+    }
 }

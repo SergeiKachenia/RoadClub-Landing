@@ -1,0 +1,25 @@
+.bicycles__switch-button_active {
+    @include font(18px, 600, 156%, center, 1, 0px);
+}
+
+.bicycles__switch-button_active:hover {
+    @include font(18px, 600, 156%, center, 0.75, 0px);
+}
+
+@media screen and (max-width:$laptop) {
+    .bicycles__switch-button_active {
+        @include font(16px, 600, 156%, center, 1, 0px);
+    }
+    .bicycles__switch-button_active:hover {
+        @include font(16px, 600, 156%, center, 0.75, 0px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .bicycles__switch-button_active {
+        @include font(14px, 600, 156%, center, 1, 0px);
+    }
+    .bicycles__switch-button_active:hover {
+        @include font(14px, 600, 156%, center, 0.75, 0px);
+    }
+}

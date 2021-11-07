@@ -1,5 +1,11 @@
 .bicycles__switch-buttons {
     grid-row: 1;
     grid-column: 2;
-    @include flex(row, flex-end, flex-end);
+    @include flex(row, flex-start, flex-end);
+}
+
+@media screen and (max-width: $mobileL) {
+    .bicycles__switch-buttons {
+        display: none;
+    }
 }

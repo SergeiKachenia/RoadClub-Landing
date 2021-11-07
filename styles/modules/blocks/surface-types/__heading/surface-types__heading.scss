@@ -1,7 +1,30 @@
 .surface-types__heading {
-    @include font(55px, $primaryTextColor, bold, 109%, left, 1, -0.5px);
-    margin: 0 0 0 $marginLargeProc;
+    @include font(55px, bold, 109%, left, 1, -0.5px);
+    color: $primaryTextColor;
+    margin: 0;
     grid-column: 1;
     grid-row: 1;
     max-width: $descWidth;
+}
+
+.surface-types__heading._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .surface-types__heading {
+        @include font(48px, bold, 109%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .surface-types__heading {
+        @include font(42px, bold, 109%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__heading {
+        @include font(32px, bold, 125%, left, 1, -0.5px);
+    }
 }

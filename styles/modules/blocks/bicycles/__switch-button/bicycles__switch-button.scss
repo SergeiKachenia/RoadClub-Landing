@@ -1,10 +1,40 @@
 .bicycles__switch-button {
     @include button(transparent, none, 0px, 0, 0, 60px, 28px);
-    @include font(18px, $primaryTextColor, 600, 156%, center, 1, 0px);
+    @include font(18px, normal, 156%, center, 0.7, 0px);
+    color: $primaryTextColor;
     margin-right: $marginMedium - 20px;
+    transition: opacity 0.5s ease;
+}
+
+.bicycles__switch-button:hover {
+    @include font(18px, normal, 156%, center, 0.6, 0px);
 }
 
 .bicycles__switch-button:last-of-type {
     margin-right: 0;
     width: 24px;
+}
+
+.bicycles__switch-button._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .bicycles__switch-button {
+        margin-right: $marginSmall + 10px;
+        @include font(16px, normal, 156%, center, 0.7, 0px);
+    }
+    .bicycles__switch-button:hover {
+        @include font(16px, normal, 156%, center, 0.6, 0px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .bicycles__switch-button {
+        margin-right: $marginSmall;
+        @include font(14px, normal, 156%, center, 0.7, 0px);
+    }
+    .bicycles__switch-button:hover {
+        @include font(14px, normal, 156%, center, 0.6, 0px);
+    }
 }

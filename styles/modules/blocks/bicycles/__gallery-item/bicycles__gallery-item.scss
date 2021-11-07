@@ -18,3 +18,41 @@
 .bicycles__gallery-item:nth-of-type(3n) {
     grid-column: 3;
 }
+
+@media screen and (max-width:$desktopSmall) {
+    .bicycles__gallery-item {
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .bicycles__gallery-item {
+        max-width: 240px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .bicycles__gallery-item {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .bicycles__gallery-item:nth-of-type(1n) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .bicycles__gallery-item:nth-of-type(2n) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .bicycles__gallery-item:nth-of-type(3n) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .bicycles__gallery-item {
+        box-shadow: none;
+        margin-bottom: 0;
+        max-width: 254px;
+    }
+}

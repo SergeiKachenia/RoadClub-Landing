@@ -27,5 +27,6 @@
 @media screen and (max-width:$mobileL) {
     .article__main-img {
         height: 350px;
+        max-width: 280px;
     }
 }

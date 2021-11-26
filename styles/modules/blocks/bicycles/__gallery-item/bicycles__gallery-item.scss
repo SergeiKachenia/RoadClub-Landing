@@ -3,7 +3,7 @@
     background-color: $primaryBackColor;
     padding: $marginSmall;
     border-radius: 20px;
-    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    box-shadow: 0 0 220px rgba(0, 0, 0, 0.1);
     margin-bottom: $marginSmall;
 }
 
@@ -19,19 +19,19 @@
     grid-column: 3;
 }
 
-@media screen and (max-width:$desktopSmall) {
+@media screen and (max-width:$desktopSmall + 40px) {
     .bicycles__gallery-item {
         max-width: 310px;
     }
 }
 
-@media screen and (max-width:$laptop) {
+@media screen and (max-width:$laptop + 150px) {
     .bicycles__gallery-item {
         max-width: 240px;
     }
 }
 
-@media screen and (max-width:$tablet) {
+@media screen and (max-width:$tablet + 150px) {
     .bicycles__gallery-item {
         max-width: 180px;
     }
@@ -51,7 +51,6 @@
         grid-row: 1;
     }
     .bicycles__gallery-item {
-        box-shadow: none;
         margin-bottom: 0;
         max-width: 254px;
     }

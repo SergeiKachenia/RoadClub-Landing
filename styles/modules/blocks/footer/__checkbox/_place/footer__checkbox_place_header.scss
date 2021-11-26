@@ -7,7 +7,6 @@
     background-color: #FFF;
     border-radius: 20px;
     transition: .5s;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
     margin-right: $marginSmall;
 }
 
@@ -26,7 +25,6 @@
     background-color: #24B47E;
     transition: .5s;
     transform: scale(1.1);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
 }
 
 .footer__checkbox_place_header:checked::before {

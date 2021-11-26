@@ -152,6 +152,9 @@
     right: 18px;
     visibility: visible;
     opacity: 1;
+    padding: 0;
+    background-color: transparent;
+    border: none;
   }
 }
 .header__burger-menu._theme_dark {
@@ -2138,7 +2141,6 @@
   background-color: #FFF;
   border-radius: 20px;
   transition: 0.5s;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   margin-right: 20px;
 }
 
@@ -2157,7 +2159,6 @@
   background-color: #24B47E;
   transition: 0.5s;
   transform: scale(1.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer__checkbox:checked::before {
@@ -2274,7 +2275,6 @@
   background-color: #FFF;
   border-radius: 20px;
   transition: 0.5s;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   margin-right: 20px;
 }
 
@@ -2293,7 +2293,6 @@
   background-color: #24B47E;
   transition: 0.5s;
   transform: scale(1.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer__checkbox_place_header:checked::before {

@@ -1,4 +1,4 @@
-### Project: RoadClub-Landing
+# Project: RoadClub-Landing
 ### [GitHub Pages link](https://sergeikachenia.github.io/RoadClub-Landing/)
 ### Tech stack
 * Figma

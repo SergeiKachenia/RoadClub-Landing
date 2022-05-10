@@ -1,6 +1,32 @@
 .article {
     width: $maxWidth;
     max-width: $desktop;
-    @include grid(40% 1fr, 200px 120px 160px 1fr, 50px 17.3%);
-    margin-bottom: $marginLarge;
+    @include grid(36% 1fr, repeat(3, min-content) 1fr, 50px 17.3%);
+    margin: 0 auto $marginLarge;
+    padding: $marginMedium + 20px 0 0 $marginLargeProc;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:$laptop) {
+    .article {
+        @include grid(36% 1fr, repeat(3, min-content) 1fr, 30px 15.3%);
+        margin: 0 auto $marginLarge - 10px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .article {
+        @include grid(36% 1fr, repeat(3, min-content) 1fr, 25px 12.3%);
+        margin: 0 auto $marginLarge - 20px;
+        padding: $marginMedium + 20px 0 0 $marginLargeProc - 3%;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article {
+        @include grid(1fr, repeat(4, min-content), 40px 0px);
+        margin: 0 auto $marginMedium + 20px;
+        padding: $marginMedium 0 0 0;
+        max-width: 284px;
+    }
 }

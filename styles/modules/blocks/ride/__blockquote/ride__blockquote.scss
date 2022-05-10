@@ -1,7 +1,32 @@
 .ride__blockquote {
-    @include font(34px, $primaryTextColor, 600, 129%, left, 1, -0.5px);
+    @include font(34px, 600, 129%, left, 1, -0.5px);
+    color: $primaryTextColor;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
     max-width: $descWidth + 10px;
+}
+
+.ride__blockquote._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .ride__blockquote {
+        @include font(28px, 600, 129%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .ride__blockquote {
+        @include font(24px, 600, 129%, left, 1, -0.5px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .ride__blockquote {
+        @include font(23px, 600, 126%, left, 1, -0.5px);
+        grid-column: 1;
+        grid-row: 2/2;
+    }
 }

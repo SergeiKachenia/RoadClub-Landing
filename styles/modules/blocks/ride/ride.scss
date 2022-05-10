@@ -1,6 +1,33 @@
 .ride {
     max-width: $desktop;
     width: $maxWidth;
-    @include grid(57.3% 1fr, 1fr 10% 5%, 0 0);
-    margin-bottom: $marginLarge;
+    @include grid(min-content 1fr, 390px 8% 5%, 0 5.6%);
+    margin: 0 auto $marginLarge;
+    padding: 0 0 0 $marginLargeProc;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:$laptop) {
+    .ride {
+        @include grid(min-content 1fr, 300px 8% 5%, 0 4.6%);
+        margin: 0 auto $marginLarge - 10px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .ride {
+        @include grid(min-content 1fr, 220px 8% 5%, 0 4.6%);
+        margin: 0 auto $marginLarge - 20px;
+        padding: 0 0 0 $marginLargeProc - 3%;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .ride {
+        @include grid(1fr, repeat(3, min-content), 40px 0px);
+        margin: 0 auto $marginMedium;
+        padding: $marginSmall 0 0 0;
+        max-width: 284px;
+        border-top: 1px solid #E3E3E3;
+    }
 }

@@ -1,5 +1,39 @@
 .surface-types__prev-button {
-    @include button(#EBEBEB, none, 50px, 0, 1%, 50px, 50px);
-    margin-right: $marginSmall;
-    @include backgroundImage('../images/surface-types__arrow-left.svg', center center, no-repeat, contain);
+    @include button(#EBEBEB, none, 50px, 0 $marginSmall 0 0, 1%, 50px, 50px);
+    @include backgroundImage('../images/surface-types__arrow-left.svg', center center, no-repeat, cover);
+}
+
+.surface-types__prev-button._theme_dark {
+    @include button(#434343, none, 50px, 0 $marginSmall 0 0, 1%, 50px, 50px);
+    @include backgroundImage('../images/surface-types__arrow-left_theme_dark.svg', center center, no-repeat, cover);
+}
+
+@media screen and (max-width:$tablet) {
+    .surface-types__prev-button {
+        @include button(#EBEBEB, none, 50px, 0 $marginSmall 0 0, 1%, 40px, 40px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .surface-types__prev-button._theme_dark {
+        @include button(#434343, none, 50px, 0 $marginSmall 0 0, 1%, 40px, 40px);
+        @include backgroundImage('../images/surface-types__arrow-left_theme_dark.svg', center center, no-repeat, cover);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__prev-button {
+        @include button(#EBEBEB, none, 50px, 0 $marginSmall 0 0, 1%, 24px, 24px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__prev-button._theme_dark {
+        @include button(#434343, none, 50px, 0 $marginSmall 0 0, 1%, 24px, 24px);
+        @include backgroundImage('../images/surface-types__arrow-left_theme_dark.svg', center center, no-repeat, cover);
+    }
+}
+
+.surface-types__prev-button:hover {
+    opacity: 0.6;
 }

@@ -1,6 +1,32 @@
 .training {
-    max-width: $desktop;
-    width: 83.3%;
     margin: 0 auto $marginLarge;
-    @include grid(1fr 1fr, 60px 270px 30px, 50px 0px);
+    @include grid(36% 1fr, 60px 270px 30px, 50px 11%);
+    padding: 0 0 0 $marginLargeProc;
+    box-sizing: border-box;
+    max-width: $desktop;
+}
+
+@media screen and (max-width:$laptop) {
+    .training {
+        @include grid(36% 1fr, 50px 230px 25px, 40px 8%);
+        margin: 0 auto $marginLarge - 10px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .training {
+        @include grid(36% 1fr, 50px 190px 25px, 22px 6%);
+        margin: 0 auto $marginLarge - 30px;
+        padding: 0 0 0 $marginLargeProc - 3%;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .training {
+        @include grid(1fr, 40px 225px 90px 20px, 40px 0px);
+        margin: 0 auto $marginLarge - 30px;
+        max-width: 284px;
+        border-top: 1px solid #E3E3E3;
+        padding: $marginSmall 0 0 0;
+    }
 }

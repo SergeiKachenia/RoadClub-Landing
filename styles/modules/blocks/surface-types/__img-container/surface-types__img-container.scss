@@ -1,7 +1,15 @@
 .surface-types__img-container {
-    margin: 0 0 0 $marginLargeProc;
+    margin: 0;
     grid-column: 1;
     grid-row: 3;
-    @include flex(row, space-between, stretch);
+    @include flex(row, space-between, center);
     overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__img-container {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }

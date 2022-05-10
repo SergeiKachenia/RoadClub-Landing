@@ -1,5 +1,34 @@
 .bicycles__gallery {
-    @include grid(1fr 1fr 1fr, 1fr, 0 40px);
+    @include grid(1fr 1fr 1fr, 1fr, 0 30px);
     grid-column: 1/2;
     grid-row: 2;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width:$laptop) {
+    .bicycles__gallery {
+        @include grid(1fr 1fr 1fr, 1fr, 0 20px);
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .bicycles__gallery {
+        @include grid(1fr 1fr 1fr, 1fr, 0 15px);
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .bicycles__gallery {
+        @include grid(1fr, 1fr, 0px 0px);
+        margin: 0 auto;
+        grid-column: 1;
+        grid-row: 3;
+        overflow: hidden;
+    }
+}
+
+.bicycles__gallery_active {
+    visibility: visible;
+    opacity: 1;
 }

@@ -1,5 +1,35 @@
 .footer__subscribe {
-    @include font(24px, $primaryTextColor, 600, 133%, left, 1, 0px);
+    @include font(24px, 600, 133%, left, 1, 0px);
+    color: $primaryTextColor;
     margin: 0 0 $marginMedium - 10px;
     max-width: $descWidth / 2;
+    padding: $marginMedium + 20px 0 0 0;
+}
+
+.footer__subscribe._theme_dark {
+    color: $secondaryTextColor;
+}
+
+@media screen and (max-width:$laptop) {
+    .footer__subscribe {
+        @include font(22px, 600, 133%, left, 1, 0px);
+        margin: 0 0 $marginMedium - 20px;
+        padding: $marginMedium + 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .footer__subscribe {
+        @include font(20px, 600, 133%, left, 1, 0px);
+        padding: $marginMedium 0 0 0;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .footer__subscribe {
+        @include font(24px, 600, 133%, left, 1, 0px);
+        padding: $marginMedium 0 0 0;
+        max-width: 284px;
+        margin: 0 auto $marginMedium - 20px;
+    }
 }

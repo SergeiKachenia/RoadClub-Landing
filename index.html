@@ -10,87 +10,161 @@
 </head>
 
 <body class="body">
-    <div class="page">
-        <header class="header">
-            <nav class="header__links">
-                <a class="header__link" href="#surface-types">Покрытия&nbsp;и&nbsp;градиенты</a>
-                <a class="header__link" href="#bicycles">Велосипеды</a>
-                <a class="header__link" href="#training">Тренировки</a>
+    <div class="page dark-blocks">
+        <header class="header dark-blocks">
+            <nav class="header__links dark-blocks">
+                <a class="header__link dark-blocks" href="#surface-types">Покрытия&nbsp;и&nbsp;градиенты</a>
+                <a class="header__link dark-blocks" href="#bicycles">Велосипеды</a>
+                <a class="header__link dark-blocks" href="#training">Тренировки</a>
+                <div class="footer__theme-switcher footer__theme-switcher_place_header">
+                    <img class="footer__img footer__img_place_header" src="./images/footer__img-sun.svg" alt="солнце">
+                    <input type="checkbox" class="footer__checkbox footer__checkbox_place_header">
+                    <img class="footer__img footer__img_place_header" src="./images/footer__img-moon.svg" alt="луна">
+                </div>
             </nav>
+            <button class="header__burger-menu dark-blocks"></button>
         </header>
         <main class="main">
             <section class="article">
-                <h1 class="article__heading">Шоссе, ТТ&nbsp;и&nbsp;Грэвел</h1>
-                <p class="article__description">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
-                <button class="article__button" type="button">Подробнее</button>
-                <div class="article__main-img"></div>
-                <span class="article__cannondale">Cannondale Systemsix</span>
+                <h1 class="article__heading dark-blocks">Шоссе, ТТ&nbsp;и&nbsp;Грэвел</h1>
+                <p class="article__description dark-blocks">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
+                <a class="article__button" href="#">Подробнее</a>
+                <div class="article__images">
+                    <img class="article__main-img" src="./images/article__main-img.jpg" alt="главная картинка">
+                    <div class="article__sticky-area">
+                        <img class="article__sticky-img" src="./images/cannondale-systemsix-himod.jpg" alt="велосипед">
+
+                    </div>
+                </div>
+                <div class="article__cannondale-container">
+                    <p class="article__cannondale dark-blocks">Cannondale Systemsix</p>
+                    <hr class="article__line dark-blocks">
+                </div>
             </section>
             <section class="ride">
-                <div class="ride__img"></div>
-                <blockquote class="ride__blockquote">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;</blockquote>
-                <p class="ride__blockquote-author">Эдди Меркс</p>
-                <p class="ride__blockquote-author-subline">Велогонщик</p>
+                <img class="ride__img" src="./images/ride__img.jpg" alt="картинка с горами и туманом">
+                <blockquote class="ride__blockquote dark-blocks">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;</blockquote>
+                <p class="ride__blockquote-author dark-blocks">Эдди Меркс</p>
+                <p class="ride__blockquote-author-subline dark-blocks">Велогонщик</p>
             </section>
             <section class="surface-types" id="surface-types">
-                <div class="surface-types__slider">
-                    <h2 class="surface-types__heading">Шоссе</h2>
-                    <p class="surface-types__description">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
+                <div class="surface-types__slider surface-types__slider_active">
+                    <h2 class="surface-types__heading dark-blocks">Шоссе</h2>
+                    <p class="surface-types__description dark-blocks">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
                     <div class="surface-types__img-container">
-                        <img class="surface-types__img" src="./images/surface-types__higway1.png">
-                        <img class="surface-types__img" src="./images/surface-types__higway2.png">
+                        <img class="surface-types__img" src="./images/surface-types__highway1.jpg" alt="картинка шоссе 1">
+                        <img class="surface-types__img" src="./images/surface-types__highway2.jpg" alt="картинка  шоссе 2">
                     </div>
-                    <div class="surface-types__buttons">
-                        <button class="surface-types__prev-button" type="button"></button>
-                        <button class="surface-types__next-button" type="button"></button>
+                </div>
+                <div class="surface-types__slider">
+                    <h2 class="surface-types__heading dark-blocks">Грэвел</h2>
+                    <p class="surface-types__description dark-blocks">Грэвел похож на&nbsp;шоссейный велосипед, но&nbsp;конструкция рамы немного отличается, и&nbsp;на&nbsp;нём стоят более широкие покрышки, всё для того чтобы проехать по&nbsp;лёгкому бездорожью.</p>
+                    <div class="surface-types__img-container">
+                        <img class="surface-types__img" src="./images/surface-types__gravel1.jpg" alt="картинка  грэвел 1">
+                        <img class="surface-types__img" src="./images/surface-types__gravel2.jpg" alt="картинка  грэвел 2">
                     </div>
+                </div>
+                <div class="surface-types__slider">
+                    <h2 class="surface-types__heading dark-blocks">ТТ</h2>
+                    <p class="surface-types__description dark-blocks">ТТ&nbsp;&mdash; это велосипед для триатлона или раздельного старта, гооняют на&nbsp;таком велике только по&nbsp;равнинному асфальту, велик очень быстрые и&nbsp;аэродинамичный.</p>
+                    <div class="surface-types__img-container">
+                        <img class="surface-types__img" src="./images/surface-types__tt1.jpg" alt="картинка  тт 1">
+                        <img class="surface-types__img" src="./images/surface-types__tt2.jpg" alt="картинка  тт 2">
+                    </div>
+                </div>
+                <div class="surface-types__buttons dark-blocks">
+                    <button class="surface-types__prev-button dark-blocks" type="button"></button>
+                    <button class="surface-types__next-button dark-blocks" type="button"></button>
                 </div>
             </section>
             <section class="bicycles" id="bicycles">
-                <h2 class="bicycles__heading">Велосипеды</h2>
+                <h2 class="bicycles__heading dark-blocks">Велосипеды</h2>
                 <div class="bicycles__switch-buttons">
-                    <button class="bicycles__switch-button">Шоссе</button>
-                    <button class="bicycles__switch-button">Грэвел</button>
-                    <button class="bicycles__switch-button">ТТ</button>
+                    <button class="bicycles__switch-button bicycles__highway-button dark-blocks">Шоссе</button>
+                    <button class="bicycles__switch-button bicycles__gravel-button dark-blocks">Грэвел</button>
+                    <button class="bicycles__switch-button bicycles__tt-button dark-blocks">ТТ</button>
                 </div>
-                <div class="bicycles__gallery">
-                    <figure class="bicycles__figure">
-                        <img class="bicycles__gallery-item" src="./images/bicycles__cervelo.png">
-                        <figcaption class="bicycles__figcaption">Cervelo Caledonia-5</figcaption>
+                <select class="bicycles__select dark-blocks">
+                    <option  value="highway" class="bicycles__option bicycles__highway-option">Шоссе</option>
+                    <option value ="gravel" class="bicycles__option bicycles__gravel-option">Грэвел</option>
+                    <option value = "tt" class="bicycles__option bicycles__tt-option">ТТ</option>
+                </select>
+                <div class="bicycles__gallery bicycles__gallery_active bicycles__higway-gallery" id="highway">
+                    <figure class="bicycles__figure bicycles__figure_active">
+                        <img class="bicycles__gallery-item" src="./images/cervelo-caledonia-5.jpg" alt="велосипед шоссе">
+                        <figcaption class="bicycles__figcaption dark-blocks">Cervelo Caledonia-5</figcaption>
                     </figure>
                     <figure class="bicycles__figure">
-                        <img class="bicycles__gallery-item" src="./images/bicycles__cannondale.png">
-                        <figcaption class="bicycles__figcaption">Cannondale Systemsix Himod</figcaption>
+                        <img class="bicycles__gallery-item" src="./images/cannondale-systemsix-himod.jpg" alt="велосипед шоссе">
+                        <figcaption class="bicycles__figcaption dark-blocks">Cannondale Systemsix Himod</figcaption>
                     </figure>
                     <figure class="bicycles__figure">
-                        <img class="bicycles__gallery-item" src="./images/bicycles__trek-domane.png">
-                        <figcaption class="bicycles__figcaption">Trek Domane SL-7</figcaption>
+                        <img class="bicycles__gallery-item" src="./images/trek-domane-sl-7.jpg" alt="велосипед шоссе">
+                        <figcaption class="bicycles__figcaption dark-blocks">Trek Domane SL-7</figcaption>
                     </figure>
+                </div>
+                <div class="bicycles__gallery bicycles__gravel-gallery" id="gravel">
+                    <figure class="bicycles__figure bicycles__figure_active">
+                        <img class="bicycles__gallery-item" src="./images/cervelo-aspero-grx-810.jpg" alt="велосипед грэвел">
+                        <figcaption class="bicycles__figcaption dark-blocks">Cervelo Aspero GRX 810</figcaption>
+                    </figure>
+                    <figure class="bicycles__figure">
+                        <img class="bicycles__gallery-item" src="./images/specialized-s-works-diverge.jpg" alt="велосипед грэвел">
+                        <figcaption class="bicycles__figcaption dark-blocks">Specialized S-Works Diverge</figcaption>
+                    </figure>
+                    <figure class="bicycles__figure">
+                        <img class="bicycles__gallery-item" src="./images/cannondale-topstone-lefty-3.jpg" alt="велосипед грэвел">
+                        <figcaption class="bicycles__figcaption dark-blocks">Cannondale Topstone Letty 3</figcaption>
+                    </figure>
+                </div>
+                <div class="bicycles__gallery bicycles__tt-gallery" id="tt">
+                    <figure class="bicycles__figure bicycles__figure_active">
+                        <img class="bicycles__gallery-item" src="./images/specialized-s-works-shiv.jpg" alt="велосипед тт">
+                        <figcaption class="bicycles__figcaption dark-blocks">Specialized S-Works Shiv</figcaption>
+                    </figure>
+                    <figure class="bicycles__figure">
+                        <img class="bicycles__gallery-item" src="./images/bmc-timemachine-01-one.jpg" alt="велосипед тт">
+                        <figcaption class="bicycles__figcaption dark-blocks">BMC Timemachine 01 ONE</figcaption>
+                    </figure>
+                    <figure class="bicycles__figure">
+                        <img class="bicycles__gallery-item" src="./images/cervelo-p-series.jpg" alt="велосипед тт">
+                        <figcaption class="bicycles__figcaption dark-blocks">Cervelo P-Series</figcaption>
+                    </figure>
+                </div>
+                <div class="bicycles__pagination">
+                    <button class="bicycles__dot bicycles__dot_active"></button>
+                    <button class="bicycles__dot"></button>
+                    <button class="bicycles__dot"></button>
                 </div>
             </section>
             <section class="training" id="training">
-                <h2 class="training__heading">Тренировки</h2>
-                <p class="training__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
-                <div class="training__img"></div>
+                <h2 class="training__heading dark-blocks">Тренировки</h2>
+                <p class="training__description dark-blocks">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+                <img class="training__img" src="images/training__img.jpg" alt="картинка с дорогой">
                 <div class="training__links">
-                    <a class="training__link" href="https://www.strava.com">Strava</a>
-                    <a class="training__link" href="https://www.komoot.com">Komoot</a>
+                    <a class="training__link dark-blocks" href="https://www.strava.com">Strava</a>
+                    <a class="training__link dark-blocks" href="https://www.komoot.com">Komoot</a>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <p class="footer__subscribe">Подпишитесь на&nbsp;рассылку &mdash;</p>
+        <footer class="footer dark-blocks">
+            <p class="footer__subscribe dark-blocks">Подпишитесь на&nbsp;рассылку &mdash;</p>
             <form class="footer__form" name="subscribe-form">
-                <input type="email" name="email" value="" placeholder="Ваш e-mail" class="footer__field" required>
+                <input type="email" name="email" value="" placeholder="Ваш e-mail" class="footer__field dark-blocks" required>
+                <button type="submit" class="footer__submit-button dark-blocks">ok</button>
             </form>
-            <p class="footer__copyright">&copy;&nbsp;Road Club 2021</p>
-            <div class="footer__theme-switcher">
-                <img class="footer__img " src="./images/footer__img-sun.svg">
-                <input type="checkbox" class="footer__checkbox">
-                <img class="footer__img" src="./images/footer__img-moon.svg">
+            <div class="footer__flex-container">
+                <p class="footer__copyright">&copy;&nbsp;Road Club 2021</p>
+                <div class="footer__theme-switcher">
+                    <img class="footer__img " src="./images/footer__img-sun.svg" alt="солнце">
+                    <input type="checkbox" class="footer__checkbox">
+                    <img class="footer__img" src="./images/footer__img-moon.svg" alt="луна">
+                </div>
+                <img class="footer__star" src="./images/footer__star.svg" alt="лого звезда">
             </div>
         </footer>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,28 @@
 .training__link {
-    @include font(18px, $primaryTextColor, 600, 156%, left, 1, 0px);
+    @include font(18px, 600, 156%, left, 1, 0px);
+    color: $primaryTextColor;
     text-decoration: none;
     margin-right: $marginSmall + 10px;
+}
+
+.training__link._theme_dark {
+    color: $secondaryTextColor;
+}
+
+.training__link:hover {
+    opacity: 0.75;
+}
+
+@media screen and (max-width:$tablet) {
+    .training__link {
+        @include font(16px, 600, 156%, left, 1, 0px);
+        margin-right: $marginSmall + 10px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .training__link {
+        @include font(14px, 600, 143%, left, 1, 0px);
+        margin-right: $marginSmall + 10px;
+    }
 }

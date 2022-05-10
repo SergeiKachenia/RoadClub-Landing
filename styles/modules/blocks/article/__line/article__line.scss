@@ -1,0 +1,23 @@
+.article__line {
+    margin: 0;
+    background-color: #D7D4D4;
+    height: 2px;
+    width: 120px;
+    border: none;
+}
+
+.article__line._theme_dark {
+    background-color: #707070;
+}
+
+@media screen and (max-width:$tablet) {
+    .article__line {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article__line {
+        visibility: hidden;
+    }
+}

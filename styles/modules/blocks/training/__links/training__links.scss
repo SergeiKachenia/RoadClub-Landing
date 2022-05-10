@@ -2,3 +2,9 @@
     grid-column: 1;
     grid-row: 3;
 }
+
+@media screen and (max-width:$mobileL) {
+    .training__links {
+        grid-row: 4;
+    }
+}

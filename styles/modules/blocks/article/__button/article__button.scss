@@ -1,6 +1,36 @@
-.article__button {
-    grid-column: 1;
-    grid-row: 3;
-    @include button(#24B47E, none, 4px, 0 0 $marginLarge $marginLargeProc, 2% 3%, 180px, 50px);
-    @include font(14px, $secondaryTextColor, 600, 129%, center, 1, 1px);
-}
+    .article__button {
+        grid-column: 1;
+        grid-row: 3;
+        @include button(#24B47E, none, 4px, 0, 3% 0, 180px, 50px);
+        @include font(14px, 600, 129%, center, 1, 1px);
+        color: $secondaryTextColor;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: box-shadow ease 1s;
+    }
+    
+    .article__button:hover {
+        box-shadow: inset 180px 0 0 0 #319E75;
+    }
+    
+    @media screen and (max-width:$laptop) {
+        .article__button {
+            @include button(#24B47E, none, 4px, 0, 4% 0, 160px, 45px);
+        }
+    }
+    
+    @media screen and (max-width:$tablet) {
+        .article__button {
+            @include button(#24B47E, none, 4px, 0, 4% 0, 140px, 40px);
+            @include font(13px, 600, 146%, center, 1, 1px);
+        }
+    }
+    
+    @media screen and (max-width:$mobileL) {
+        .article__button {
+            grid-row-start: 4;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            @include button(#24B47E, none, 4px, 0, 4% 0, 284px, 46px);
+        }
+    }

@@ -1,6 +1,5 @@
-@mixin font ($size, $color, $fontWeight, $lineHeight, $textAlign, $opacity, $spacing) {
+@mixin font ($size, $fontWeight, $lineHeight, $textAlign, $opacity, $spacing) {
     font-size: $size;
-    color: $color;
     font-weight: $fontWeight;
     line-height: $lineHeight;
     text-align: $textAlign;

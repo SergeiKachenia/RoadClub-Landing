@@ -1,0 +1,26 @@
+.bicycles__select {
+    width: 114px;
+    height: 30px;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+    @include font(11px, 600, 127%, left, 1, 0px);
+    color: $primaryTextColor;
+}
+
+@media screen and (max-width: $mobileL) {
+    .bicycles__select {
+        visibility: visible;
+        opacity: 1;
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.bicycles__select._theme_dark {
+    background-color: #333;
+    border: 1px solid #333;
+    color: $secondaryTextColor;
+}

@@ -1,12 +1,32 @@
 .article__main-img {
     max-width: 610px;
     width: $maxWidth;
-    min-height: calc(100vw*836/1440);
-    margin-top: $marginSmall;
-    @include backgroundImage('../images/article__main-image.png', center center, no-repeat, contain);
-    grid-row-start: 1;
-    grid-row-end: -1;
-    grid-column-start: 2;
+    height: 836px;
     align-self: flex-start;
     justify-self: flex-end;
+}
+
+@media screen and (max-width:$desktopSmall) {
+    .article__main-img {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .article__main-img {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .article__main-img {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .article__main-img {
+        height: 350px;
+        max-width: 280px;
+    }
 }

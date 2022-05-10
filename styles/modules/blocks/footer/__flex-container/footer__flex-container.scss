@@ -1,0 +1,14 @@
+.footer__flex-container {
+    @include flex(row, space-between, center);
+    max-width: $desktop;
+    width: $maxWidth;
+    padding: 0 0 $marginMedium;
+}
+
+@media screen and (max-width:$mobileL) {
+    .footer__flex-container {
+        padding: 0 0 $marginSmall;
+        max-width: 284px;
+        margin: 0 auto;
+    }
+}

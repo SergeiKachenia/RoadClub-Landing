@@ -1,4 +1,32 @@
 .header__links {
     @include flex(row, flex-end, center);
-    margin: 28px 9.4% 28px;
+    padding: 28px $marginLargeProc 28px 0;
+    max-width: $desktop;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header__links._theme_dark {
+    background-color: $secondaryBackColor;
+}
+
+@media screen and (max-width:$mobileL) {
+    .header__links {
+        visibility: hidden;
+        opacity: 0;
+        @include flex(column, flex-start, center);
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: 1px;
+        background-color: $primaryBackColor;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .header__links._active {
+        height: 100vh;
+        visibility: visible;
+        opacity: 1;
+        padding: 100px 0 0 0;
+    }
 }

@@ -1,4 +1,19 @@
 .footer__form {
+    position: relative;
     max-width: 360px;
     margin: 0 0 $marginLarge - 20px;
+}
+
+@media screen and (max-width:$tablet) {
+    .footer__form {
+        margin: 0 0 $marginLarge - 30px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .footer__form {
+        margin: 0 0 $marginLarge - 30px;
+        max-width: 284px;
+        margin: 0 auto $marginMedium;
+    }
 }

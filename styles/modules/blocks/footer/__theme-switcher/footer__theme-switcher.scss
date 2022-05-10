@@ -1,7 +1,10 @@
 .footer__theme-switcher {
-    position: absolute;
-    bottom: 12%;
-    right: -5%;
-    transform: translate(-50%, -50%);
     @include flex(row, center, center);
+    margin-right: $marginLargeProc;
+}
+
+@media screen and (max-width: $mobileL) {
+    .footer__theme-switcher {
+        display: none;
+    }
 }

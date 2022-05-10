@@ -1,10 +1,43 @@
 .surface-types__img {
     width: $maxWidth;
     max-width: 650px;
-    min-height: calc(100vw*400/1440);
+    height: 100%;
     margin-right: $marginMedium - 20px;
 }
 
 .surface-types__img:last-of-type {
     margin-right: 0;
+}
+
+@media screen and (max-width:$desktopSmall) {
+    .surface-types__img {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .surface-types__img {
+        max-width: 450px;
+        margin-right: $marginMedium - 30px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .surface-types__img {
+        max-width: 350px;
+        margin-right: $marginMedium - 40px;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__img {
+        max-width: 284px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:$mobileL) {
+    .surface-types__img:last-of-type {
+        display: none;
+    }
 }

@@ -1,0 +1,10 @@
+.footer__theme-switcher_place_header {
+    display: none;
+}
+
+@media screen and (max-width: $mobileL) {
+    .footer__theme-switcher_place_header._active {
+        @include flex(row, center, center);
+        margin: $marginLarge 0 0 0;
+    }
+}
